@@ -5,7 +5,7 @@ using UnityEngine;
 public class CannonController : MonoBehaviour
 {
     public Rigidbody2D piggyRigid;
-    public float power = 3;
+    public float power = 4;
     // Start is called before the first frame update
     void Start()
     {

@@ -25,10 +25,10 @@ public class DestroyBox : MonoBehaviour
     {
         //Debug.Log("the speed is " + GetComponent<Rigidbody2D>().velocity.magnitude);
         //if the box is hit with anything that is not grass, destroy after (x) seconds
-        if (collision.gameObject.tag != "grass" && enabled)
+        if (collision.gameObject.tag != "grass" && enabled && GetComponent<Rigidbody2D>().velocity.magnitude > 1)
         {
             //destroy the box
-            Destroy(gameObject, 1);
+            Destroy(gameObject, 3);
             //add to the score - get the public float "score" from ScoreStorage class, and change its value to score + however much box is worth
             scoreStorage.scoreValue += value;
             Debug.Log("the score is " + scoreStorage.scoreValue);
