@@ -26,6 +26,7 @@ public class EnemyControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Player.OnHit += GetBigger;
         //following Mig's waypoints code example for the patrol element of this script
 
         //setting up a variable for the enemy's NavMesh
@@ -42,6 +43,9 @@ public class EnemyControl : MonoBehaviour
 
         //starting the enemy at the idle animation
         AnimateIdle();
+
+        //subscribe to cheese firing event
+        CheeseCollection.OnCollection += GetFaster;
     }
 
     // Update is called once per frame
@@ -54,6 +58,17 @@ public class EnemyControl : MonoBehaviour
         AttackMode();
     }
 
+    public void GetFaster()
+    {
+        enemyAgent.speed += 3;
+    }
+
+    public void GetBigger(Vector3 size)
+    {
+        //make the thing get bigger by amt (size from event parameter in player)
+        transform.localScale += size;
+    }
+
     public void OnCollisionEnter(Collision collision)
     {
         //setting the enemy to attack when it collides with the player
@@ -63,6 +78,7 @@ public class EnemyControl : MonoBehaviour
         //Debug.Log("this is occurring");
         if (collision.transform == player.transform)
         {
+            
             isAttacking = true;
             Debug.Log(lives.PlayerLives);
             lives.PlayerLives--;

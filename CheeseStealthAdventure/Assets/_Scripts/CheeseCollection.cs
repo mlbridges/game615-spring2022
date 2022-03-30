@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class CheeseCollection : MonoBehaviour
 {
+    //event that makes the enemies faster when cheese is collected
+    public delegate void DoSomething();
+    public static event DoSomething OnCollection;
+
     public PlayerStats scoreStorage;
     public int winCount = 10;
 
@@ -25,6 +29,11 @@ public class CheeseCollection : MonoBehaviour
         //on collision, needs to destroy item cheese + add point to point total
         if (collision.gameObject.tag == "Player")
         {
+            if (OnCollection != null)
+            {
+                OnCollection();
+            }
+
             //adds to the score
             if (transform.tag == "cheese")
             {

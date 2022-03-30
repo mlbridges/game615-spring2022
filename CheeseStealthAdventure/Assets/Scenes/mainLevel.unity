@@ -588,6 +588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DogPBR Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5655202681697372542, guid: 7a4be9b21370306478238c5bcb00bec1, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 5655202681697801566, guid: 7a4be9b21370306478238c5bcb00bec1, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2226,6 +2230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: slime B
       objectReference: {fileID: 0}
+    - target: {fileID: 7622878850719950435, guid: 83228f8a5b486984ab8149df918c5308, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83228f8a5b486984ab8149df918c5308, type: 3}
 --- !u!1001 &689059447
@@ -2310,6 +2318,10 @@ PrefabInstance:
     - target: {fileID: 7622878850719950435, guid: 83228f8a5b486984ab8149df918c5308, type: 3}
       propertyPath: m_Name
       value: slime C
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622878850719950435, guid: 83228f8a5b486984ab8149df918c5308, type: 3}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83228f8a5b486984ab8149df918c5308, type: 3}
@@ -5680,6 +5692,10 @@ PrefabInstance:
     - target: {fileID: 7622878850719950435, guid: 83228f8a5b486984ab8149df918c5308, type: 3}
       propertyPath: m_Name
       value: slime A
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622878850719950435, guid: 83228f8a5b486984ab8149df918c5308, type: 3}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83228f8a5b486984ab8149df918c5308, type: 3}
