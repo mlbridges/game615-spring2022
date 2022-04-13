@@ -22,7 +22,8 @@ public class Player : MonoBehaviour
 		void Update (){
 			if (Input.GetKey ("w")) {
 				anim.SetInteger ("AnimationPar", 1);
-			}  else {
+				SoundManager.Instance().Footsteps();
+		}  else {
 				anim.SetInteger ("AnimationPar", 0);
 			}
 
