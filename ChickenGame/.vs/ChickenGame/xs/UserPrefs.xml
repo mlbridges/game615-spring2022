@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{ED3F2172-9CF3-AA9F-EFBA-65F0B49DC34B}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/ObjectCollection.cs">
+    <Files>
+      <File FileName="Assets/_Scripts/ChickenAnims.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/ObjectCollection.cs" Line="20" Column="53" />
+      <File FileName="Assets/_Scripts/InventoryDict.cs" Line="163" Column="64" />
+      <File FileName="Assets/_Scripts/GemEating.cs" Line="61" Column="28" />
+      <File FileName="Assets/_Scripts/PointCounter.cs" Line="9" Column="35" />
+      <File FileName="Assets/_Scripts/SpeedTracker.cs" Line="19" Column="55" />
+      <File FileName="Assets/_Scripts/StrengthTracker.cs" Line="19" Column="67" />
+      <File FileName="Assets/_Scripts/HealthTracker.cs" Line="19" Column="59" />
+      <File FileName="Assets/_Scripts/ChickenMoveAnims.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6dd40e02-9e54-4711-8939-a2e3fb8be1e3" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
