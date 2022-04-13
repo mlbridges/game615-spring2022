@@ -10,14 +10,12 @@ public class ObjectCollection : MonoBehaviour
     public delegate void Placeholder(string _tag);
     public static event Placeholder OnPlayerColl;
 
-    public CharacterController playerController;
-
     //value to be used if we want to move or hide the objects instead of destroying them
     //int y = -100;
     private void OnCollisionEnter(Collision collision)
     {
         //checking to see what collided with the collectable
-        if (collision.gameObject == playerController)
+        if (collision.gameObject.tag == "Player")
         {
             //Debug.Log("this happened");
 

@@ -10,7 +10,7 @@ public class GemEating : InventoryDict
     public static event SendDictMessage gemRemove;
 
     //trying to refer to the character controller
-    public ChickenMoveAnims playerAnims;
+    //public ChickenMoveAnims playerAnims;
 
     //bools to set gem usage based on event triggering
     private bool HealthGemEatingAbility = false;
@@ -58,7 +58,7 @@ public class GemEating : InventoryDict
             if (Input.GetKeyDown(KeyCode.O))
             {
                 //increase speed
-                playerAnims.speed += 0.3f;
+                //playerAnims.speed += 0.3f;
 
                 //tell the UI they gained 1 speed
                 score.speedValue ++;
